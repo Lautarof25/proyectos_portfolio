@@ -32,36 +32,37 @@
                     <p class="dos">Desarrollador <br> <span>web</span></p>
                 </div>
                 <div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem sint tempora at
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem
+                        sint tempora at
                         maxime est voluptatibus, soluta error aut maiores.</p>
                 </div>
             </section>
             <section id="trabajos">
                 <h1>Trabajos</h1>
-                <div>
+                <div class="grid-3">
                     <div>
                         <h2>Online CV</h2>
-                        <img src="" alt="web">
+                        <img src="../multimedia/images/foto_perfil.jpg" alt="previsualización web de cv online">
                     </div>
                     <div>
                         <h2>Sitio web recetas</h2>
-                        <img src="" alt="web">
+                        <img src="../multimedia/images/foto_perfil.jpg" alt="previsualización web de recetas">
                     </div>
                     <div>
                         <h2>Pagina web</h2>
-                        <img src="" alt="web">
+                        <img src="../multimedia/images/foto_perfil.jpg" alt="previsualización sitio web">
                     </div>
                     <div>
                         <h2>Pagina web</h2>
-                        <img src="" alt="web">
+                        <img src="../multimedia/images/foto_perfil.jpg" alt="previsualización sitio web">
                     </div>
                     <div>
                         <h2>Pagina web</h2>
-                        <img src="" alt="web">
+                        <img src="../multimedia/images/foto_perfil.jpg" alt="previsualización sitio web">
                     </div>
                     <div>
                         <h2>Pagina web</h2>
-                        <img src="" alt="web">
+                        <img src="../multimedia/images/foto_perfil.jpg" alt="previsualización sitio web">
                     </div>
                 </div>
             </section>
@@ -69,15 +70,23 @@
                 <h1>Contacto</h1>
                 <div>
                     <form action="" name="formulario">
-                        <fieldset>
-                            <i class="fa-solid fa-user"></i><label for="nombre">Ingrese su nombre</label>
-                            <input type="text" name="nombre" placeholder="Ingrese su nombre">
-                            <i class="fa-solid fa-phone"></i><label for="telefono">Ingrese su teléfono</label>
-                            <input type="tel" name="telefono" placeholder="Ingrese su teléfono">
-                            <i class="fa-solid fa-envelope"></i><label for="email">Ingrese su email</label>
-                            <input type="email" name="email" placeholder="Ingrese su email">
-                            <i class="fa-solid fa-comment"></i><label for="email">Ingrese su mensaje</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+                        <fieldset class="flex-1">
+                            <div>
+                                <i class="fa-solid fa-user"></i><label for="nombre">Ingrese su nombre</label>
+                            </div>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                            <div>
+                                <i class="fa-solid fa-phone"></i><label for="telefono">Ingrese su teléfono</label>
+                            </div>
+                            <input type="tel" id="telefon" name="telefono" placeholder="Ingrese su teléfono">
+                            <div>
+                                <i class="fa-solid fa-envelope"></i><label for="email">Ingrese su email</label>
+                            </div>
+                            <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                            <div>
+                                <i class="fa-solid fa-comment"></i><label for="mensaje">Ingrese su mensaje</label>
+                            </div>
+                            <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje..."></textarea>
                             <button>Enviar</button>
                         </fieldset>
                     </form>
