@@ -22,6 +22,11 @@ html {
 
 body {
     font-family: var(--font);
+    background-color: var(--first-color);
+}
+/* Ocultar scroll */
+::-webkit-scrollbar {
+    display: none;
 }
 
 .container {
@@ -64,6 +69,7 @@ img {
 /* Header */
 header {
     box-shadow: 2px 2px 2px black;
+    z-index: 30;
 }
 .navegacion {
     background-color: var(--first-color);
@@ -78,21 +84,59 @@ nav {
     padding: 10px;
     font-size: 1.2em;
     font-weight: bolder;
+    z-index: 20;
 }
 /* Sección quien */
 #quien {
     background-color: var(--second-color);
 }
 .quien__texto {
+    color: white;
     font-size: 2em;
+    text-shadow: 2px 2px black;
+    z-index: 10;
 }
 .quien__imagen{
     border-radius: 50%;
+    z-index: 5;
 }
 .descripcion{
     margin: 2% auto;
     border-radius: 10px;
     max-width: 75ch;
+    text-align: justify;
+    color: black;
+}
+/* Circulos */
+.contenedorDatos {
+    position: relative;
+}
+.bigCircle {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: var(--first-color);
+}
+.mediumCircle {
+    position: absolute;
+    right: 35%;
+    top: 100px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--fourth-color);
+}
+.smallCircle {
+    position: absolute;
+    right: 30%;
+    top: 200px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--third-color);
 }
 
 /* Sección trabajos */
@@ -101,23 +145,29 @@ nav {
 }
 .contenedorTarjetas > * {
     text-align: center;
+    padding: 1%;
+    background-color: var(--first-color);
+    margin: 1%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 1px 5px black;
+}
+.contenedorTarjetas > *:hover {
+    filter: brightness(.75);
+}
+.contenedorTarjetas > * > * {
+    padding: 1%;
 }
 .contenedorTarjetas img {
     border-radius: 15px;
 }
-
+.thumbnail {
+    height: 200px;
+}
 /* Sección contacto */
 #contacto {
     background-color: var(--first-color);
 }
-.flotante {
-    font-size: 70px;
-    padding: 1%;
-    width: 50%;
-    background-color: var(--fourth-color);
-    border-radius: 15px;
-    border: 1px solid black;
-}
+
 fieldset {
     border: none;
     font-size: 1.5em;
@@ -142,14 +192,6 @@ button {
     width: 40%;
     margin: 1% 0;
 }
-/* Efectos */
-button:hover{
-    background-color: var(--third-color);
-}
-.flotante > *:hover{
-    color: var(--second-color);
-}
-
 /* Cajas flexibles */
 .flex {
     display: flex;
@@ -158,3 +200,28 @@ button:hover{
     flex-wrap: wrap;
     gap: 2%;
 }
+/* Flotante redes */
+.flotante {
+    position: sticky;
+    left: 25%;
+    bottom: 1%;
+    font-size: 50px;
+    padding: 1%;
+    width: 50%;
+    background-color: var(--fourth-color);
+    border-radius: 15px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    opacity: .7;
+}
+.flotante:hover {
+    opacity: 1;
+}
+/* Efectos */
+button:hover{
+    background-color: var(--third-color);
+}
+.flotante > *:hover{
+    color: var(--second-color);
+}
+
