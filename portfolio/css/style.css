@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-    --first-color: #fdb44b;
-    --second-color: #00bbf0;
-    --third-color: #005792;
-    --fourth-color: #00204a;
+    --first-color: #E80C7E;
+    --second-color: #9D01DB;
+    --third-color: #F00CF2;
+    --fourth-color: #E8930C;
 
     --font: 'Lato', sans-serif;
 
-    --width-container: 900px;
+    --width-container: 1200px;
+}
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -29,9 +33,15 @@ h1,
 p {
     margin: 0;
 }
+.centrar {
+    margin: 0 auto;
+}
+.sombra {
+    box-shadow: 5px 5px 5px black;
+}
 
 section {
-    padding: 0 15px;
+    padding: 15px;
 }
 
 .descripcion {
@@ -41,7 +51,7 @@ section {
 
 a {
     text-decoration: none;
-    color: var(--fourth-color);
+    color: black;
 }
 
 span {
@@ -51,7 +61,10 @@ span {
 img {
     max-width: 250px;
 }
-
+/* Header */
+header {
+    box-shadow: 2px 2px 2px black;
+}
 .navegacion {
     background-color: var(--first-color);
     position: -webkit-sticky;
@@ -59,50 +72,89 @@ img {
     top: 0;
     width: 100%;
 }
-
 nav {
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
 }
-
+/* Sección quien */
 #quien {
     background-color: var(--second-color);
 }
-
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px;
-    gap: 10px;
+.quien__texto {
+    font-size: 2em;
+}
+.quien__imagen{
+    border-radius: 50%;
+}
+.descripcion{
+    margin: 2% auto;
+    border-radius: 10px;
+    max-width: 75ch;
 }
 
-.imagen {
-    grid-row: 1/3;
-}
-
-.uno {
-    align-self: flex-end;
-}
-
-.dos {
-    align-self: flex-start;
-}
-
+/* Sección trabajos */
 #trabajos {
     background-color: var(--third-color);
 }
+.contenedorTarjetas > * {
+    text-align: center;
+}
+.contenedorTarjetas img {
+    border-radius: 15px;
+}
 
+/* Sección contacto */
 #contacto {
     background-color: var(--first-color);
 }
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.flotante {
+    font-size: 70px;
+    padding: 1%;
+    width: 50%;
+    background-color: var(--fourth-color);
+    border-radius: 15px;
+    border: 1px solid black;
 }
-/* Contacto */
-.flex-1 {
+fieldset {
+    border: none;
+    font-size: 1.5em;
+    width: 80%;
+    margin: 0 0;
+}
+fieldset > * {
+    width: 100%;
+}
+input, textarea,fieldset > div {
+    border-radius: 5px;
+    padding: 1%;
+    width: 80%;
+}
+button {
+    border: none;
+    padding: 1%;
+    background-color: var(--second-color);
+    color: aliceblue;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 40%;
+    margin: 1% 0;
+}
+/* Efectos */
+button:hover{
+    background-color: var(--third-color);
+}
+.flotante > *:hover{
+    color: var(--second-color);
+}
+
+/* Cajas flexibles */
+.flex {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
 }

@@ -15,31 +15,41 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header navegacion">
+
+    <header class="header navegacion">
+        <div class="container">
             <nav>
                 <a href="#quien">¿Quien soy?</a>
                 <a href="#trabajos">Trabajos</a>
                 <a href="#contacto">Contacto</a>
             </nav>
-        </header>
-        <main class="main">
-            <section id="quien">
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section id="quien">
+            <div class="container">
                 <h1>Quien soy</h1>
-                <div class="grid-2">
-                    <img class="imagen" src="../multimedia/images/foto_perfil.jpg" alt="foto de perfil">
-                    <h2 class="uno">Fernández <br> <span>lautaro</span></h2>
-                    <p class="dos">Desarrollador <br> <span>web</span></p>
+                <div class="flex">
+                    <img class="quien__imagen sombra" src="../multimedia/images/foto_perfil.jpg" alt="foto de perfil">
+                    <div class="quien__texto">
+                        <h2 class="uno">Fernández <br> <span>lautaro</span></h2>
+                        <p class="dos">Desarrollador <br> <span>web</span></p>
+                    </div>
                 </div>
                 <div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem
+                    <p class="descripcion sombra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                        exercitationem
                         sint tempora at
                         maxime est voluptatibus, soluta error aut maiores.</p>
                 </div>
-            </section>
-            <section id="trabajos">
+            </div>
+        </section>
+        <section id="trabajos">
+            <div class="container">
                 <h1>Trabajos</h1>
-                <div class="grid-3">
+                <div class="flex contenedorTarjetas">
                     <div>
                         <h2>Online CV</h2>
                         <img src="../multimedia/images/foto_perfil.jpg" alt="previsualización web de cv online">
@@ -65,43 +75,54 @@
                         <img src="../multimedia/images/foto_perfil.jpg" alt="previsualización sitio web">
                     </div>
                 </div>
-            </section>
-            <section id="contacto">
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="container">
                 <h1>Contacto</h1>
                 <div>
-                    <form action="" name="formulario">
-                        <fieldset class="flex-1">
+                    <form class="flex" action="" name="formulario">
+
+                        <fieldset class="flex">
                             <div>
-                                <i class="fa-solid fa-user"></i><label for="nombre">Ingrese su nombre</label>
+                                <i class="fa-solid fa-user"></i> <label for="nombre">Ingrese su nombre</label>
                             </div>
                             <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
                             <div>
-                                <i class="fa-solid fa-phone"></i><label for="telefono">Ingrese su teléfono</label>
+                                <i class="fa-solid fa-phone"></i> <label for="telefono">Ingrese su teléfono</label>
                             </div>
-                            <input type="tel" id="telefon" name="telefono" placeholder="Ingrese su teléfono">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
                             <div>
-                                <i class="fa-solid fa-envelope"></i><label for="email">Ingrese su email</label>
+                                <i class="fa-solid fa-envelope"></i> <label for="email">Ingrese su email</label>
                             </div>
                             <input type="email" id="email" name="email" placeholder="Ingrese su email">
                             <div>
-                                <i class="fa-solid fa-comment"></i><label for="mensaje">Ingrese su mensaje</label>
+                                <i class="fa-solid fa-comment"></i> <label for="mensaje">Ingrese su mensaje</label>
                             </div>
                             <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje..."></textarea>
                             <button>Enviar</button>
                         </fieldset>
                     </form>
                 </div>
-                <div>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <i class="fa-brands fa-square-github"></i>
-                    <i class="fa-brands fa-square-whatsapp"></i>
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-square-twitter"></i>
+                <div class="flotante flex centrar sombra">
+                    <a href="https://www.linkedin.com/in/lautaro-exequiel-fernandez-2146b3238/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lautadev25/" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://github.com/Lautarof25" target="_blank">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                    <a href="https://wa.me/5491160382014?text=Hola,Lautaro" target="_blank">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                    <a href="https://twitter.com/Lautadev" target="_blank"><i
+                            class="fa-brands fa-square-twitter"></i></a>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 <script src="../script/script.js"></script>
