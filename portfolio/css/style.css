@@ -11,7 +11,6 @@
     --width-container: 1200px;
 }
 
-
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding);
@@ -100,6 +99,9 @@ nav {
     text-shadow: 2px 2px black;
     z-index: 10;
 }
+.uno {
+    margin: 0;
+}
 .quien__imagen{
     border-radius: 50%;
     z-index: 5;
@@ -173,7 +175,6 @@ nav {
 }
 fieldset {
     border: none;
-    font-size: 1.5em;
     width: 80%;
     margin: 0 0;
 }
@@ -183,7 +184,8 @@ fieldset > * {
 input, textarea,fieldset > div {
     border-radius: 5px;
     padding: 1%;
-    width: 85%;
+    width: 90%;
+    font-size: 1.5em;
 }
 button {
     border: none;
@@ -210,15 +212,17 @@ button {
 .flotante {
     position: sticky;
     left: 25%;
-    bottom: 1%;
-    font-size: 50px;
+    bottom: 2%;
+    width: 40vw;
+    font-size: 16px;
+    font-size: 2.5em;
     padding: 1%;
-    width: 50%;
     background-color: var(--fourth-color);
     border-radius: 15px;
     border: 1px solid black;
     justify-content: space-evenly;
     opacity: .7;
+    margin-top: 1.5rem;
 }
 .flotante:hover {
     opacity: 1;
@@ -237,7 +241,7 @@ button:hover{
         padding: 0;
         margin: 0;
     }
-    .paddingGrande{
-        padding: 0;
+    fieldset{
+        width: 100%;
     }
  }
