@@ -10,14 +10,15 @@
 
     --width-container: 1200px;
 }
-*,*::after,*::before {
-    margin: 0;
-    padding: 0;
-}
+
 
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding);
+    box-sizing: border-box;
+}
+*,*::after,*::before {
+    box-sizing: inherit;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
 
 h1,
 p {
-    margin: 0;
+    margin: 1%;
 }
 .centrar {
     margin: 0 auto;
@@ -89,6 +90,9 @@ nav {
 /* Sección quien */
 #quien {
     background-color: var(--second-color);
+}
+.paddingGrande {
+    padding: 5%;
 }
 .quien__texto {
     color: white;
@@ -147,9 +151,9 @@ nav {
     text-align: center;
     padding: 1%;
     background-color: var(--first-color);
-    margin: 1%;
     border-radius: 0 0 10px 10px;
     box-shadow: 1px 1px 5px black;
+    height: fit-content;
 }
 .contenedorTarjetas > *:hover {
     filter: brightness(.75);
@@ -167,7 +171,6 @@ nav {
 #contacto {
     background-color: var(--first-color);
 }
-
 fieldset {
     border: none;
     font-size: 1.5em;
@@ -180,7 +183,7 @@ fieldset > * {
 input, textarea,fieldset > div {
     border-radius: 5px;
     padding: 1%;
-    width: 80%;
+    width: 85%;
 }
 button {
     border: none;
@@ -199,6 +202,9 @@ button {
     align-items: center;
     flex-wrap: wrap;
     gap: 2%;
+}
+.contenedorTarjetas {
+    gap: 50px;
 }
 /* Flotante redes */
 .flotante {
@@ -225,3 +231,13 @@ button:hover{
     color: var(--second-color);
 }
 
+/* Media query */
+@media (max-width: 390px) { 
+    #contacto, fieldset, fieldset > *, form{
+        padding: 0;
+        margin: 0;
+    }
+    .paddingGrande{
+        padding: 0;
+    }
+ }
