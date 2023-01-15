@@ -250,10 +250,22 @@ button:hover{
     color: var(--second-color);
 }
 /* Animaciones */
-#quien span {
-    
-}
 
+@keyframes circles {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+  }
+
+#quien :is(.bigCircle,.mediumCircle,.smallCircle) {
+    animation-name: circles;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
 
 
 /* Media query */
