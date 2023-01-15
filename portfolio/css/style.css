@@ -38,6 +38,9 @@ h1,
 p {
     margin: 1%;
 }
+h1 {
+    color: white;
+}
 .centrar {
     margin: 0 auto;
 }
@@ -47,11 +50,6 @@ p {
 
 section {
     padding: 15px;
-}
-
-.descripcion {
-    padding: 15px;
-    background-color: white;
 }
 
 a {
@@ -68,8 +66,9 @@ img {
 }
 /* Header */
 header {
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 0px 1px 5px black;
     z-index: 30;
+    width: 100vw;
 }
 .navegacion {
     background-color: var(--first-color);
@@ -85,6 +84,9 @@ nav {
     font-size: 1.2em;
     font-weight: bolder;
     z-index: 20;
+}
+nav a {
+    color: white;
 }
 /* Sección quien */
 #quien {
@@ -106,7 +108,9 @@ nav {
     border-radius: 50%;
     z-index: 5;
 }
-.descripcion{
+.descripcion {
+    padding: 15px;
+    background-color: white;
     margin: 2% auto;
     border-radius: 10px;
     max-width: 75ch;
@@ -143,6 +147,14 @@ nav {
     width: 50px;
     height: 50px;
     background-color: var(--third-color);
+}
+/* Sección stacks */
+#stacks .flex {
+    justify-content: space-evenly;
+    padding: 2em;
+} 
+#stacks i {
+    font-size: 4em;
 }
 
 /* Sección trabajos */
