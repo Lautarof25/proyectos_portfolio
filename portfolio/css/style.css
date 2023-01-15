@@ -88,6 +88,9 @@ nav {
 nav a {
     color: white;
 }
+nav a:hover {
+    color: black;
+}
 /* Sección quien */
 #quien {
     background-color: var(--second-color);
@@ -118,13 +121,13 @@ nav a {
     color: black;
 }
 /* Circulos */
-.contenedorDatos {
+.relativo {
     position: relative;
 }
 .bigCircle {
     position: absolute;
-    right: 15%;
-    top: 0;
+    right: 20%;
+    top: 15%;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -133,7 +136,7 @@ nav a {
 .mediumCircle {
     position: absolute;
     right: 35%;
-    top: 100px;
+    top: 30%;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -142,7 +145,7 @@ nav a {
 .smallCircle {
     position: absolute;
     right: 30%;
-    top: 200px;
+    top: 50%;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -246,6 +249,12 @@ button:hover{
 .flotante > *:hover{
     color: var(--second-color);
 }
+/* Animaciones */
+#quien span {
+    
+}
+
+
 
 /* Media query */
 @media (max-width: 390px) { 
@@ -255,5 +264,8 @@ button:hover{
     }
     fieldset{
         width: 100%;
+    }
+    .quien__texto{
+        font-size: 1.5rem;
     }
  }
