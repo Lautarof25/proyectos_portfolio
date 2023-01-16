@@ -159,7 +159,9 @@ nav a:hover {
 #stacks i {
     font-size: 4em;
 }
-
+#stacks .fa-brands:hover {
+    color: white;
+}
 /* Sección trabajos */
 #trabajos {
     background-color: var(--third-color);
@@ -266,7 +268,6 @@ button:hover{
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
-
 
 /* Media query */
 @media (max-width: 390px) { 
