@@ -339,6 +339,7 @@ button:hover{
      }
      .nav-menu_visible {
         left: 0;
+        z-index: 2000;
      }
      .toggle:focus:not(:focus-visible){
         outline: none;
