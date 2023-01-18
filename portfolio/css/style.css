@@ -13,7 +13,9 @@
 
 html {
     scroll-behavior: smooth;
+    /* javascript ajuste a secciones */
     scroll-padding-top: var(--scroll-padding);
+    /*  */
     box-sizing: border-box;
 }
 *,*::after,*::before {
@@ -64,6 +66,23 @@ span {
 img {
     max-width: 250px;
 }
+/* Cajas diagonales */
+
+#quien {
+    transform: skewY(-5deg);
+}
+
+#quien > * {
+    transform: skewY(5deg);
+}
+
+#trabajos {
+    transform: skewY(5deg);
+}
+#trabajos > * {
+    transform: skewY(-5deg);
+}
+
 /* Header */
 header {
     box-shadow: 0px 1px 5px black;
@@ -79,7 +98,6 @@ header {
     width: 100%;
 }
 nav {
-
     padding: 10px;
     font-size: 1.2em;
     font-weight: bolder;
@@ -223,6 +241,9 @@ input, textarea,fieldset > div {
     cursor: pointer;
     width: 40%;
     margin: 1% 0;
+}
+#contacto button:hover {
+    background-color: var(--third-color);
 }
 /* Cajas flexibles */
 .flex {
