@@ -190,6 +190,16 @@ nav .fa-bars {
 #stacks .fa-brands:hover {
     color: white;
 }
+/* stack containers */
+.stack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#stacks .level-stack .fa-star {
+    font-size: 1em;
+}
+
 /* Sección trabajos */
 #trabajos {
     background-color: var(--third-color);
