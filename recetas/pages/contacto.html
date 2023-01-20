@@ -7,34 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/general.css">
 </head>
 
 <body>
-    <div class="container">
-        <header id="header">
+
+    <header id="header">
+        <div class="container flex">
             <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="logo" id="header__logo">
             <nav id="navbar">
                 <a href="../index.html" class="navbar__item">Inicio</a>
                 <a href="./recetas.html" class="navbar__item">Recetas</a>
-                <a href="#" class="navbar__item">Contacto</a>
+                <a href="#" class="navbar__item active_link">Contacto</a>
             </nav>
-        </header>
-        <main id="main">
-            <form action="">
-                <fieldset>
-                    <label for="nombre">Ingrese su nombre</label>
-                    <input type="text" name="nombre" placeholder="Ingrese su nombre">
-                    <label for="email">Ingrese su email</label>
-                    <input type="email" name="email" placeholder="Ingrese su email">
-                    <label for="telefono">Ingrese su teléfono</label>
-                    <input type="tel" name="telefono" placeholder="Ingrese su teléfono">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button>Enviar</button>
-                </fieldset>
-            </form>
-        </main>
-        <footer id="footer">
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+        <form action="">
+            <fieldset>
+                <label for="nombre">Ingrese su nombre</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                <label for="email">Ingrese su email</label>
+                <input type="email" name="email" placeholder="Ingrese su email">
+                <label for="telefono">Ingrese su teléfono</label>
+                <input type="tel" name="telefono" placeholder="Ingrese su teléfono">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button>Enviar</button>
+            </fieldset>
+        </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container flex">
             <a href="#" class="footer__item">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="36"
                     height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
@@ -64,8 +69,9 @@
                     <polyline points="3 7 12 13 21 7" />
                 </svg>
             </a>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

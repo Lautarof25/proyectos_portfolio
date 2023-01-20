@@ -7,40 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/general.css">
 </head>
 
 <body>
-    <div class="container">
-        <header id="header">
+
+    <header id="header">
+        <div class="container flex">
             <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="logo" id="header__logo">
             <nav id="navbar">
                 <a href="../index.html" class="navbar__item">Inicio</a>
-                <a href="#" class="navbar__item">Recetas</a>
+                <a href="#" class="navbar__item active_link">Recetas</a>
                 <a href="./contacto.html" class="navbar__item">Contacto</a>
             </nav>
-        </header>
-        <main id="main">
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
             <section>
                 <article>
                     <h2>Solomillo Wellington</h2>
-                    <img src="https://www.hogarmania.com/archivos/201812/solomillo-wellington-xl-668x400x80xX.jpg" alt="solomillo_wellington">
+                    <a href="./solomillo.html">
+                        <img src="https://www.hogarmania.com/archivos/201812/solomillo-wellington-xl-668x400x80xX.jpg"
+                            alt="solomillo_wellington">
+                    </a>
                 </article>
                 <article>
                     <h2>Lubina con papas</h2>
-                    <img src="https://www.hogarmania.com/archivos/201812/lubina-patatas-xl-668x400x80xX.jpg" alt="lubina_con_papas">
+                    <a href=""></a>
+                    <img src="https://www.hogarmania.com/archivos/201812/lubina-patatas-xl-668x400x80xX.jpg"
+                        alt="lubina_con_papas">
                 </article>
                 <article>
                     <h2>Pollo guisado</h2>
-                    <img src="https://www.hogarmania.com/archivos/202212/pollo-al-horno-portada-668x400x80xX-1.jpg" alt="pollo_guisado">
+                    <img src="https://www.hogarmania.com/archivos/202212/pollo-al-horno-portada-668x400x80xX-1.jpg"
+                        alt="pollo_guisado">
                 </article>
                 <article>
                     <h2>Croquetas de jamón</h2>
-                    <img src="https://www.hogarmania.com/archivos/201801/croquetas-jamon-detalle-668x400x80xX.jpg" alt="croquetas_jamon">
+                    <img src="https://www.hogarmania.com/archivos/201801/croquetas-jamon-detalle-668x400x80xX.jpg"
+                        alt="croquetas_jamon">
                 </article>
             </section>
-        </main>
-        <footer id="footer">
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container flex">
             <a href="#" class="footer__item">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="36"
                     height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
@@ -70,8 +82,9 @@
                     <polyline points="3 7 12 13 21 7" />
                 </svg>
             </a>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
