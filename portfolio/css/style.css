@@ -18,7 +18,10 @@ html {
     /*  */
     box-sizing: border-box;
 }
-*,*::after,*::before {
+
+*,
+*::after,
+*::before {
     box-sizing: inherit;
 }
 
@@ -26,6 +29,7 @@ body {
     font-family: var(--font);
     background-color: var(--first-color);
 }
+
 /* Ocultar scroll */
 ::-webkit-scrollbar {
     display: none;
@@ -40,12 +44,15 @@ h1,
 p {
     margin: 1%;
 }
+
 h1 {
     color: white;
 }
+
 .centrar {
     margin: 0 auto;
 }
+
 .sombra {
     box-shadow: 5px 5px 5px black;
 }
@@ -66,20 +73,22 @@ span {
 img {
     max-width: 250px;
 }
+
 /* Cajas diagonales */
 
 #quien {
     transform: skewY(-5deg);
 }
 
-#quien > * {
+#quien>* {
     transform: skewY(5deg);
 }
 
 #trabajos {
     transform: skewY(5deg);
 }
-#trabajos > * {
+
+#trabajos>* {
     transform: skewY(-5deg);
 }
 
@@ -90,6 +99,7 @@ header {
     width: 100vw;
     height: 50px;
 }
+
 .navegacion {
     background-color: var(--first-color);
     position: -webkit-sticky;
@@ -97,12 +107,14 @@ header {
     top: 0;
     width: 100%;
 }
+
 nav {
     padding: 10px;
     font-size: 1.2em;
     font-weight: bolder;
     z-index: 20;
 }
+
 .nav-menu {
     display: flex;
     justify-content: space-around;
@@ -110,35 +122,44 @@ nav {
     padding: 0;
     margin: 0;
 }
+
 nav a {
     color: white;
 }
+
 nav a:hover {
     color: black;
 }
+
 nav .fa-bars {
     display: none;
 }
+
 /* Sección quien */
 #quien {
     background-color: var(--second-color);
 }
+
 .paddingGrande {
     padding: 5%;
 }
+
 .quien__texto {
     color: white;
     font-size: 2em;
     text-shadow: 2px 2px black;
     z-index: 10;
 }
+
 .uno {
     margin: 0;
 }
-.quien__imagen{
+
+.quien__imagen {
     border-radius: 50%;
     z-index: 5;
 }
+
 .descripcion {
     padding: 15px;
     background-color: white;
@@ -148,10 +169,12 @@ nav .fa-bars {
     text-align: justify;
     color: black;
 }
+
 /* Circulos */
 .relativo {
     position: relative;
 }
+
 .bigCircle {
     position: absolute;
     right: 20%;
@@ -161,6 +184,7 @@ nav .fa-bars {
     height: 150px;
     background-color: var(--first-color);
 }
+
 .mediumCircle {
     position: absolute;
     right: 35%;
@@ -170,6 +194,7 @@ nav .fa-bars {
     height: 100px;
     background-color: var(--fourth-color);
 }
+
 .smallCircle {
     position: absolute;
     right: 30%;
@@ -179,23 +204,62 @@ nav .fa-bars {
     height: 50px;
     background-color: var(--third-color);
 }
+
 /* Sección stacks */
 #stacks .flex {
     justify-content: space-evenly;
     padding: 2em;
-} 
+}
+
 #stacks i {
     font-size: 4em;
 }
+
 #stacks .fa-brands:hover {
     color: white;
 }
+
 /* stack containers */
+.stack {
+    height: 100px;
+    font-size: 2rem;
+}
+
+.stack img {
+    max-width: 5rem;
+}
+
+.stack p {
+    visibility: hidden;
+    transition: visibility 0s, opacity .5s linear, scale .5s;
+    opacity: 0;
+    /* Posicion absoluta para que no ocupe espacio en el div*/
+    position: absolute;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+.stack:hover p {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+}
+
+.stack:hover span {
+    display: none;
+}
+.stack:hover img {
+    filter: brightness(1.15) drop-shadow(0 0 5px gray);
+    transform: scale(1.2);
+}
+
 .stack-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 #stacks .level-stack .fa-star {
     font-size: 1em;
 }
@@ -204,10 +268,12 @@ nav .fa-bars {
 #trabajos {
     background-color: var(--third-color);
 }
-#trabajos > * {
+
+#trabajos>* {
     padding-top: 0;
 }
-.contenedorTarjetas > * {
+
+.contenedorTarjetas>* {
     text-align: center;
     padding: 1%;
     background-color: var(--first-color);
@@ -215,36 +281,47 @@ nav .fa-bars {
     box-shadow: 1px 1px 5px black;
     height: fit-content;
 }
-.contenedorTarjetas > *:hover {
+
+.contenedorTarjetas>*:hover {
     filter: brightness(.75);
 }
-.contenedorTarjetas > * > * {
+
+.contenedorTarjetas>*>* {
     padding: 1%;
 }
+
 .contenedorTarjetas img {
     border-radius: 15px;
 }
+
 .thumbnail {
     height: 200px;
 }
+
 /* Sección contacto */
 #contacto {
     background-color: var(--first-color);
 }
+
 fieldset {
     border: none;
     width: 80%;
     margin: 0 0;
 }
-fieldset > * {
+
+fieldset>* {
     width: 100%;
 }
-input, textarea,fieldset > div {
+
+input,
+textarea,
+fieldset>div {
     border-radius: 5px;
     padding: 1%;
     width: 90%;
     font-size: 1.5em;
 }
+
 #contacto button {
     border: none;
     padding: 1%;
@@ -255,13 +332,16 @@ input, textarea,fieldset > div {
     width: 40%;
     margin: 1% 0;
 }
+
 #contacto button:hover {
     background-color: var(--third-color);
 }
+
 #contacto .paddingGrande {
     padding-top: 0;
     padding-bottom: 0;
 }
+
 /* Cajas flexibles */
 .flex {
     display: flex;
@@ -270,9 +350,11 @@ input, textarea,fieldset > div {
     flex-wrap: wrap;
     gap: 2%;
 }
+
 .contenedorTarjetas {
     gap: 50px;
 }
+
 /* Flotante redes */
 .flotante {
     position: sticky;
@@ -289,67 +371,84 @@ input, textarea,fieldset > div {
     opacity: .7;
     margin-top: .5rem;
 }
+
 .flotante:hover {
     opacity: 1;
 }
+
 /* Efectos */
-button:hover{
+button:hover {
     background-color: var(--third-color);
 }
-.flotante > *:hover{
+
+.flotante>*:hover {
     color: var(--second-color);
 }
+
 /* Animaciones */
 
 @keyframes circles {
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(1.5);
     }
-  }
+}
 
 #quien .bigCircle {
     animation: circles 2s alternate infinite;
 }
+
 #quien .mediumCircle {
     animation: circles 2s alternate-reverse infinite;
 }
+
 #quien .smallCircle {
     animation: circles 1s alternate infinite;
 }
 
 /* Media query */
-@media (max-width: 390px) { 
+@media (max-width: 390px) {
     nav {
         flex-direction: column;
         align-items: center;
     }
-    #contacto, fieldset, fieldset > *, form{
+
+    #contacto,
+    fieldset,
+    fieldset>*,
+    form {
         padding: 0;
         margin: 0;
     }
-    fieldset{
+
+    fieldset {
         width: 100%;
     }
-    .quien__texto{
+
+    .quien__texto {
         font-size: 1.5rem;
     }
+
     .flotante {
         width: 100%;
         bottom: 0;
         border-radius: 0;
         font-size: 2em;
     }
+
     #contacto .paddingGrande {
         padding: 0;
     }
+
     #quien .container {
         width: 100%;
     }
- }
- .toggle {
+}
+
+.toggle {
     background: none;
     color: white;
     padding: 0 20px;
@@ -358,10 +457,10 @@ button:hover{
     border: none;
     display: none;
     cursor: pointer;
- }
+}
 
- /* Menú hamburguesa */
- @media (max-width: 600px) { 
+/* Menú hamburguesa */
+@media (max-width: 600px) {
     .nav-menu {
         flex-direction: column;
         background-color: var(--second-color);
@@ -378,14 +477,22 @@ button:hover{
         left: 100%;
         transition: left .3s;
     }
+    .stack {
+        grid-column: 2rem;
+        height: 170px;
+        font-size: 1.5rem;
+    }
+
     .toggle {
         display: block;
-     }
-     .nav-menu_visible {
+    }
+
+    .nav-menu_visible {
         left: 0;
         z-index: 2000;
-     }
-     .toggle:focus:not(:focus-visible){
+    }
+
+    .toggle:focus:not(:focus-visible) {
         outline: none;
-     }
-  }
+    }
+}
