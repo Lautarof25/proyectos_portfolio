@@ -460,7 +460,7 @@ button:hover {
 }
 
 /* Menú hamburguesa */
-@media (max-width: 600px) {
+@media (max-width: 760px) {
     .nav-menu {
         flex-direction: column;
         background-color: var(--second-color);
@@ -477,12 +477,18 @@ button:hover {
         left: 100%;
         transition: left .3s;
     }
+    .columna {
+        flex-direction: column;
+    }
     .stack {
         grid-column: 2rem;
         height: 170px;
         font-size: 1.5rem;
     }
-
+    .stack:hover p {
+        left: 0;
+        width: 100%;
+    }
     .toggle {
         display: block;
     }
