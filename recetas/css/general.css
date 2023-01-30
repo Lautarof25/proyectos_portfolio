@@ -1,0 +1,131 @@
+/* Importación de fuente sin serifa de google fonts
+Las importaciones siempre van arriba */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+
+/* Normalizado
+Sirve para resetear los paddings y margins, la configuración será igual todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Esta configuración sirve para que el padding y margin 
+no se sume al modelo de caja */
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Quitar el scroll bar Y para un diseño más limpio */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ----- */
+body {
+    /* Usamos la fuente importada */
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* adaptamos las imagenes al 100% */
+
+img {
+    width: 100%;
+}
+
+/* Configuramos las secciones que se repiten en todas las páginas */
+header,
+footer {
+    /* Color principal */
+    background-color: #FFCC01;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    /* Configurando flex box con los elementos */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Agregando sombra */
+    position: relative;
+    box-shadow: 0 1px 5px black;
+}
+
+/* Configurando la imagen logo para que entre en el header */
+.img_logo {
+    width: 90px;
+    /* Agregando sombra al logo */
+    filter: drop-shadow(0 0 3px black);
+}
+
+/* Configurando los li y anchor */
+header ul li {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+header a,
+footer a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Configurando flex box en ul (contenedor de los li) */
+header ul {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Configuración general de main */
+main {
+    /* Color complementario */
+    background: rgb(254, 255, 13);
+    background: radial-gradient(circle, rgba(254, 255, 13, 1) 0%, rgba(255, 204, 1, 1) 100%);
+    padding: 2rem;
+    /* Centrando texto */
+    text-align: center;
+    /* Ocupar todo el espacio en blanco restante menos el alto de header y footer */
+    min-height: calc(100vh - 200px);
+}
+
+main h1 {
+    font-size: 2rem;
+}
+
+main h2 {
+    font-size: 1.2rem;
+}
+
+/* Agregando contenedor */
+main .container {
+    /* Limite ancho */
+    max-width: 1200px;
+    /* Centramos el contenido */
+    margin: 0 auto;
+}
+
+/* Configuración de hover en los li */
+
+header ul li a:hover {
+    background-color: #E8A60C;
+    transition: all .7s;
+}
+
+/* Configuración del link activo */
+
+.link_activo {
+    border-bottom: 1px solid black;
+}
+
+/* Configurando iconos del footer */
+
+footer i {
+    font-size: 2rem;
+}
