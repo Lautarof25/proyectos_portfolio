@@ -1,0 +1,30 @@
+
+main > .container {
+    display: flex;
+    /* wrap para cuando los articles no quepan */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* Separación entre cada item del contenedor */
+    grid-gap: 1rem;
+}
+
+main article {
+    /* Agregamos un límite a cada artículo */
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+main h2 {
+    margin: .5rem 0;
+}
+
+main img {
+    /* Con esta propiedad elimino espacios en blanco
+    provocadas por el display inline que tienen
+    las imagenes por default */
+    display: block;
+    border-radius: 0 0 5px 5px;
+}

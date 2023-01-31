@@ -93,6 +93,10 @@ main {
     text-align: center;
     /* Ocupar todo el espacio en blanco restante menos el alto de header y footer */
     min-height: calc(100vh - 200px);
+    /* Centramos el contenido del main */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main h1 {
