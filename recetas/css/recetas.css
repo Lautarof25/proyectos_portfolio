@@ -11,7 +11,7 @@ main > .container {
 
 main article {
     /* Agregamos un límite a cada artículo */
-    width: 400px;
+    max-width: 400px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
