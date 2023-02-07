@@ -11,6 +11,7 @@ Sirve para resetear los paddings y margins, la configuración será igual todos 
 
 /* Esta configuración sirve para que el padding y margin 
 no se sume al modelo de caja */
+
 html {
     box-sizing: border-box;
 }
@@ -32,6 +33,9 @@ body {
     /* Usamos la fuente importada */
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background: rgb(254, 255, 13);
+    background: radial-gradient(circle, rgba(254, 255, 13, 1) 0%, rgba(255, 204, 1, 1) 100%);
+    transition: all 1s;
 }
 
 /* adaptamos las imagenes al 100% */
@@ -61,7 +65,9 @@ footer {
 .img_logo {
     width: 90px;
     /* Agregando sombra al logo */
-    filter: drop-shadow(0 0 3px black);
+    background-color: #fff;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px black);
 }
 
 /* Configurando los li y anchor */
@@ -69,12 +75,13 @@ header ul li {
     list-style-type: none;
     font-size: 1.2rem;
 }
-
-header a,
+header a, footer a {text-decoration: none;}
+header a {
+    color: black;
+}
 footer a {
-    text-decoration: none;
     color: white;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 0 0 5px black;
 }
 
 /* Configurando flex box en ul (contenedor de los li) */
@@ -86,8 +93,6 @@ header ul {
 /* Configuración general de main */
 main {
     /* Color complementario */
-    background: rgb(254, 255, 13);
-    background: radial-gradient(circle, rgba(254, 255, 13, 1) 0%, rgba(255, 204, 1, 1) 100%);
     padding: 2rem;
     /* Centrando texto */
     text-align: center;
@@ -97,6 +102,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+.background-img {
+    width: 100%;  
+    height: 100%;  
+    position: absolute;    
+    background:transparent url(../multimedia/imagenes/fondo_wallpaper2.png) 
+               repeat scroll 0% 0%;  
+    opacity: .1;
+    z-index: -1;
 }
 
 main h1 {
@@ -125,7 +142,7 @@ header ul li a:hover {
 /* Configuración del link activo */
 
 .link_activo {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid white;
 }
 
 /* Configurando iconos del footer */

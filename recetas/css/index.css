@@ -1,30 +1,31 @@
-main .caja-texto {
-    background-color: #fff;
-    /* 
-'ch' es un medida usada para limitar el numero
-de caracteres
-ch hace referencia a "character" 
-60 es un medida máxima para no perderse en la lectura*/
-    max-width: 50vw;
-    padding: 1rem;
-    /* Centrado de caja */
-    margin: 0 auto;
-
-    /* Efectos */
-    box-shadow: 0 0 5px black;
-
-
+main h1 {
     margin-bottom: 1rem;
 }
 
-main h2 {
-    font-size: 150%;
+.caja-imagen {
+    width: 60vw;
+    height: 60vw;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../multimedia/imagenes/fondo_comida.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1rem solid white;
+    box-shadow: 0 0 1rem black;
+    overflow: hidden;
 }
 
-main img {
-    max-width: 800px;
-    border-radius: 50%;
-    /* Efectos */
-    border: 2rem solid white;
-    box-shadow: 0 0 1rem black;
-}
+ main h2 {
+    width: 100%;
+    padding: 1rem;
+    height: fit-content;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+ }
