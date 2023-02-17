@@ -9,13 +9,12 @@ Sirve para resetear los paddings y margins, la configuración será igual todos 
     padding: 0;
 }
 
-/* Esta configuración sirve para que el padding y margin 
+/* Esta configuración sirve para que el padding y margin
 no se sume al modelo de caja */
-
 html {
     box-sizing: border-box;
 }
-
+/* Hola, estoy acá. Creo que hay que modif header .container*/
 
 *,
 *:before,
@@ -41,7 +40,7 @@ body {
     justify-content: space-between;
 }
 
-/* adaptamos las imagenes al 100% */
+/* adaptamos las imagenes al 100%, Lautaro comenté esta imagen para no tener scroll vertical y no se vea pixelada*/
 
 img {
     width: 100%;
@@ -55,27 +54,26 @@ footer {
     min-height: 10vh;
     width: 100%;
     text-align: center;
-    /* Configurando flex box con los elementos */
     display: flex;
-    justify-content: space-around;
     align-items: center;
     /* Agregando sombra */
     position: relative;
     box-shadow: 0 1px 5px black;
 }
-
-header ul {
+header .container {
+    /* Configurando flex box con los elementos */
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-footer {
-    padding: 1rem 0;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    column-gap: 5rem;
 }
 
 /* Configurando la imagen logo para que entre en el header */
 .img_logo {
-    width: 90px;
+    width: 70px;
     /* Agregando sombra al logo */
     background-color: #fff;
     border-radius: 50%;
@@ -85,7 +83,7 @@ footer {
 /* Configurando los li y anchor */
 header ul li {
     list-style-type: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 header a, footer a {text-decoration: none;}
 header a {
@@ -99,6 +97,8 @@ footer a {
 /* Configurando flex box en ul (contenedor de los li) */
 header ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -109,24 +109,12 @@ main {
     /* Centrando texto */
     text-align: center;
     /* Ocupar todo el espacio en blanco restante menos el alto de header y footer */
-    /* min-height: calc(100vh - 200px); */
     min-height: 80vh;
     /* Centramos el contenido del main */
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: relative;
-}
-
-.background-img {
-    width: 100%;  
-    height: 100%;  
-    position: absolute;    
-    background:transparent url(../multimedia/imagenes/fondo_wallpaper2.png) 
-               repeat scroll 0% 0%;  
-    opacity: .1;
-    z-index: -1;
 }
 
 main h1 {
@@ -138,13 +126,22 @@ main h2 {
 }
 
 /* Agregando contenedor */
-main .container {
+.container {
     /* Limite ancho */
     max-width: 1200px;
     /* Centramos el contenido */
     margin: 0 auto;
 }
-
+/* Imagen de fondo */
+.background-img {
+    width: 100%;  
+    height: 100%;  
+    position: absolute;    
+    background:transparent url(../multimedia/imagenes/fondo_wallpaper2.png) 
+               repeat scroll 0% 0%;  
+    opacity: .05;
+    z-index: -1;
+}
 /* Configuración de hover en los li */
 
 header ul li a:hover {
@@ -155,11 +152,32 @@ header ul li a:hover {
 /* Configuración del link activo */
 
 .link_activo {
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid black;
 }
 
 /* Configurando iconos del footer */
 
-footer i {
+footer {
+    background-color: #FFCC01;
+    height: 80px;
+    width: 100vw;
+    position: relative;
+    box-shadow: 0 1px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2rem;
 }
+
+footer a {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+@media (max-width: 490px) { 
+     main {
+        padding: .5rem;
+     }
+ }

@@ -5,45 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video recetas</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- Agregando icono al title -->
     <link rel="shortcut icon" href="../multimedia/imagenes/logo_recetas.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- El siguiente link irá en todas las páginas, en primer orden, como configuración general -->
     <link rel="stylesheet" href="../css/general.css">
-    <!-- El siguiente link es personalizado según la página, en este caso video recetas -->
-    <link rel="stylesheet" href="../css/video_recetas.css">
+    <!-- El siguiente link es personalizado según la página, en este caso para el index -->
+    <link rel="stylesheet" href="../css/video.css">
 </head>
 
 <body>
     <header>
-        <a href="../index.html">
-            <img class="img_logo" src="../multimedia/imagenes/logo_recetas.png" alt="logo pagina">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/recetas.html">Recetas</a></li>
-                <li class="link_activo">Video recetas</li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <!-- Agregando contenedor -->
+        <div class="container">
+            <!-- Cambiando el logo por un png -->
+            <a href="../index.html">
+                <img class="img_logo" src="../multimedia/imagenes/logo_recetas.png" alt="logo pagina">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/recetas.html">Recetas</a></li>
+                    <li class="link_activo">Video recetas</li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="container">
-            <h1>Pollo guisado</h1>
-            <iframe width="320" height="240" src="https://www.youtube.com/embed/fJoLYnYJOy0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            <section>
+                <h1>Pollo guisado</h1>
+                <iframe src="https://www.youtube.com/embed/fJoLYnYJOy0?controls=0" 
                 allowfullscreen></iframe>
-            <br>
-            <h1>Solomillo a la wellington</h1>
-            <video width="320" height="240" controls>
-                <source src="../multimedia/video/solomillo_wellington.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            </section>
+            <section>
+                <h1>Solomillo a la wellington</h1>
+                <video controls poster="../multimedia/imagenes/solomillo.jpg">
+                    <source src="../multimedia/video/solomillo_wellington.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
         </div>
+        <!-- Imagenes de fondo -->
         <div class="background-img"></div>
     </main>
 

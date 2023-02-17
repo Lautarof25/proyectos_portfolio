@@ -6,45 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- Agregando icono al title -->
     <link rel="shortcut icon" href="../multimedia/imagenes/logo_recetas.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- El siguiente link irá en todas las páginas, en primer orden, como configuración general -->
     <link rel="stylesheet" href="../css/general.css">
-    <!-- El siguiente link es personalizado según la página, en este caso index -->
     <link rel="stylesheet" href="../css/contacto.css">
 </head>
 
 <body>
     <header>
-        <a href="../index.html">
-            <img class="img_logo" src="../multimedia/imagenes/logo_recetas.png" alt="logo pagina">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/recetas.html">Recetas</a></li>
-                <li><a href="../pages/video_recetas.html">Video recetas</a></li>
-                <li class="link_activo">Contacto</li>
-            </ul>
-        </nav>
+        <!-- Agregando contenedor -->
+        <div class="container">
+            <!-- Cambiando el logo por un png -->
+            <a href="../index.html">
+                <img class="img_logo" src="../multimedia/imagenes/logo_recetas.png" alt="logo pagina">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/recetas.html">Recetas</a></li>
+                    <li><a href="../pages/video_recetas.html">Video recetas</a></li>
+                    <li class="link_activo">Contacto</li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <form action="">
-            <h1>¡Envianos tu receta!</h1>
-            <i class="fa-solid fa-user"></i>
-            <input type="text" name="nombre" placeholder="Nombre"><br>
-            <i class="fa-regular fa-envelope"></i>
-            <input type="email" name="correo" placeholder="Email"><br>
-            <i class="fa-sharp fa-solid fa-phone"></i>
-            <input type="tel" name="teléfono" placeholder="Teléfono"><br>
-            
-            <textarea name="Mensaje" id="msj" cols="30" rows="10"></textarea><br>
-            <input type="submit" name="enviar" value="Enviar">
-        </form>
+    <main class="contactos">
+        <div class="contactos">
+            <section>
+                <form action="">
+                    <h1>¡Envianos tu receta!</h1>
+                    <label for="nombre">
+                        <i class="fa-solid fa-user"></i> 
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </label>
+
+                    <label for="correo">
+                        <i class="fa-regular fa-envelope"></i> 
+                        <input type="email" id="correo" name="correo" placeholder="Email" required>
+                    </label>
+
+                    <label for="telefono">
+                        <i class="fa-sharp fa-solid fa-phone"></i> 
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                    </label>
+
+                    <label for="msj">
+                        <i class="fa-solid fa-pen"></i> 
+                        <textarea name="Mensaje" id="msj" placeholder="Comentario..." required></textarea>
+                    </label>
+
+                    <input class="color_boton_enviar" type="submit" name="enviar" value="Enviar">
+                </form>
+            </section>
+            <section>
+                <h2>Dirección</h2>
+                <iframe class="tamaño_mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7001266958177!2d-58.472233099999976!3d-34.6875171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc90e57948b91%3A0x7c8136ba3f138ee5!2sLa%20Receta%20Perfecta!5e0!3m2!1ses!2sar!4v1675730120045!5m2!1ses!2sar"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+        <!-- Imagenes de fondo -->
         <div class="background-img"></div>
     </main>
-
 
     <footer>
         <!-- Agregando links -->

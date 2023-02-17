@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+
+main {
+    font-family: 'Gentium Book Plus', serif;
+}
+
+main img {
+    width: 100%;
+}
+
+main > .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > p {
+    align-content: flex-start;
+}
+
+main h2 {
+    margin: .5rem 0;
+    font-size: 1.4rem;
+}
+
+main section {
+    max-width: 75ch;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+section {
+    margin-top: 20px;
+    height: calc(100% - 20px);
+    width: 100%;
+    /* Efecto hoja de papel */
+    background-image: repeating-linear-gradient(white 0px, white 32px, rgb(190, 214, 234) 34px);
+    box-shadow: 0 0 10px black;
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 2rem;
+    text-align: left;
+}
+/* Agregando viñetas de lista personalizada */
+main li::marker {
+    content: '🍴 ';
+}
+/* Agregando viñeta personalizada a strong */
+strong::after {
+    content: "🕗";
+}
+
+
+

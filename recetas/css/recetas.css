@@ -28,3 +28,32 @@ main img {
     display: block;
     border-radius: 0 0 5px 5px;
 }
+
+/* Cards */
+
+article {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  article p {
+    position: absolute;
+    bottom: -50px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    opacity: 0;
+    
+  }
+  
+  article:hover p {
+    opacity: 1;
+    bottom: 0;
+    transition: bottom 1s;
+  }
+  
+  @media (max-width:490px){
+    article{
+      font-size: .8rem;
+    }
+  }

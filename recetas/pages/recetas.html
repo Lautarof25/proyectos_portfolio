@@ -5,59 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas</title>
+    <title>Mis Recetas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- Agregando icono al title -->
     <link rel="shortcut icon" href="../multimedia/imagenes/logo_recetas.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- El siguiente link irá en todas las páginas, en primer orden, como configuración general -->
     <link rel="stylesheet" href="../css/general.css">
-    <!-- El siguiente link es personalizado según la página, en este caso recetas -->
     <link rel="stylesheet" href="../css/recetas.css">
 </head>
 
 <body>
     <header>
-        <a href="../index.html">
-            <img class="img_logo" src="../multimedia/imagenes/logo_recetas.png" alt="logo pagina">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li class="link_activo">Recetas</li>
-                <li><a href="./video_recetas.html">Video recetas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <!-- Agregando contenedor -->
+        <div class="container">
+            <!-- Cambiando el logo por un png -->
+            <a href="../index.html">
+                <img class="img_logo" src="../multimedia/imagenes/logo_recetas.png" alt="logo pagina">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="link_activo">Recetas</li>
+                    <li><a href="./video_recetas.html">Video recetas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="container">
             <article>
                 <h2>Solomillo Wellington</h2>
-                <div>
-                    <a href="../pages/solomillo.html">
-                        <img src="../multimedia/imagenes/solomillo.jpg" alt="Solomillo Wellington">
-                    </a>
-                </div>
+                <a href="../pages/solomillo.html">
+                    <img src="../multimedia/imagenes/solomillo.jpg" alt="Solomillo Wellington">
+                    <p>Esta receta es un plato principal que se puede servir con una guarnición de patatas al horno...</p>
+                </a>
             </article>
             <article>
                 <h2>Lubina con patatas</h2>
                 <a href="../pages/lubina.html">
                     <img src="../multimedia/imagenes/lubina_patatas.jpg" alt="lubina con patatas">
+                    <p>Acompañada con unas deliciosas patatas panadera, es una opción perfecta para dejar encantados a todos.</p>
                 </a>
             </article>
             <article>
                 <h2>Pollo guisado</h2>
                 <a href="../pages/pollo_guisado.html">
                     <img src="../multimedia/imagenes/pollo_guisado.jpg" alt="pollo guisado">
+                    <p>El pollo guisado con verduras es una receta típica de abuela. Además, como casi todos los guisos, es muy económico de hacer.</p>
                 </a>
             </article>
             <article>
                 <h2>Croquetas de jamón</h2>
                 <a href="../pages/croquetas_jamon.html">
                     <img src="../multimedia/imagenes/croquetas_jamon.jpg" alt="croquetas de jamón">
+                    <p>El mejor consejo para hacer unas croquetas de campeonato es “tener paciencia y una muñeca potente para remover”.</p>
                 </a>
             </article>
         </div>
+        <!-- Imagenes de fondo -->
         <div class="background-img"></div>
     </main>
 
