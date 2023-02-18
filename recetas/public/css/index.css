@@ -89,7 +89,7 @@ main .container_imagenes img {
 .carousel-item {
     /* Para que sus elementos fijen la posicion absoluta*/
     position: relative;
-    transition: all 1s ease-in;
+    
 }
 
 .carousel-item h2 {
@@ -107,6 +107,7 @@ main .container_imagenes img {
     object-fit: cover;
     object-position: center;
     animation: 5s linear 0s infinite alternate imagenes;
+    transition: animation 2s ease-in;
 }
 
 /* Animacion */
