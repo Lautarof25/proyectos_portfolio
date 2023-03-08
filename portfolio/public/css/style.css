@@ -501,4 +501,7 @@ button:hover {
     .toggle:focus:not(:focus-visible) {
         outline: none;
     }
+    h1 {
+        text-align: center;
+    }
 }
