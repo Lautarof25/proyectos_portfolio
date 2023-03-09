@@ -279,7 +279,14 @@ nav .fa-bars {
     background-color: var(--first-color);
     border-radius: 0 0 10px 10px;
     box-shadow: 1px 1px 5px black;
-    height: fit-content;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedorTarjetas p {
+    font-size: 3rem;
 }
 
 .contenedorTarjetas>*:hover {
@@ -292,6 +299,7 @@ nav .fa-bars {
 
 .contenedorTarjetas img {
     border-radius: 15px;
+    box-shadow: 0 0 10px black;
 }
 
 .thumbnail {
