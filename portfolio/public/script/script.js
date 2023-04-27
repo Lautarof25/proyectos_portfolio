@@ -4,10 +4,6 @@ document.documentElement.style.setProperty('--scroll-padding', altoNavegacion + 
 // Menu toggle
 const navToggle = document.querySelector(".toggle");
 const navMenu = document.querySelector(".nav-menu");
-// const item1 = document.querySelector(".item-menu1");
-// const item2 = document.querySelector(".item-menu2");
-// const item3 = document.querySelector(".item-menu3");
-// const item4 = document.querySelector(".item-menu4");
 
 navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("nav-menu_visible");
@@ -17,19 +13,6 @@ navToggle.addEventListener("click", () => {
         navToggle.setAttribute("aria-label", "Abrir menú");
     }
 });
-
-// item1.addEventListener("click", () => {
-//     navMenu.classList.remove("nav-menu_visible");
-// });
-// item2.addEventListener("click", () => {
-//     navMenu.classList.remove("nav-menu_visible");
-// });
-// item3.addEventListener("click", () => {
-//     navMenu.classList.remove("nav-menu_visible");
-// });
-// item4.addEventListener("click", () => {
-//     navMenu.classList.remove("nav-menu_visible");
-// });
 
 document.querySelectorAll('.nav-menu').forEach(function (element) {
     element.addEventListener("click", () => {
