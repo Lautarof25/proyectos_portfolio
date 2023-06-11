@@ -214,11 +214,6 @@ nav .fa-bars {
 #stacks i {
     font-size: 4em;
 }
-
-#stacks .fa-brands:hover {
-    color: white;
-}
-
 /* stack containers */
 .stack {
     height: 100px;
