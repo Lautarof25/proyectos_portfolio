@@ -379,6 +379,11 @@ fieldset>div {
     opacity: 1;
 }
 
+.svg {
+    width: 64px;
+    box-shadow: none!important;
+}
+
 /* Efectos */
 button:hover {
     background-color: var(--third-color);
