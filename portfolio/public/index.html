@@ -24,10 +24,9 @@
                     ≡
                 </button>
                 <ul class="nav-menu">
-                    <li class="item-menu1"><a href="#quien">¿Quien soy?</a></li>
+                    <li class="item-menu1"><a href="#aboutme">¿Quien soy?</a></li>
                     <li class="item-menu2"><a href="#stacks">Habilidades</a></li>
-                    <li class="item-menu3"><a href="#trabajos">Trabajos</a></li>
-                    <li class="item-menu4"><a href="#contacto">Contacto</a></li>
+                    <li class="item-menu3"><a href="#projects">Proyectos</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,14 +34,14 @@
 
     <main class="main">
 
-        <section id="quien">
+        <section id="aboutme" class="flex-viewport">
             <div class="container paddingGrande relativo">
                 <h1>Quien soy</h1>
                 <div>
                     <div class="flex contenedorDatos">
-                        <img class="quien__imagen sombra" src="./multimedia/images/foto_perfil.jpg"
+                        <img class="about_img sombra" src="./multimedia/images/foto_perfil.jpg"
                             alt="foto de perfil">
-                        <div class="quien__texto">
+                        <div class="about_text">
                             <h2 class="uno">Fernández <br> <span>lautaro</span></h2>
                             <p class="dos">Desarrollador <br> <span>web</span></p>
                         </div>
@@ -59,7 +58,7 @@
                 </div>
             </div>
         </section>
-        <section id="stacks">
+        <section id="stacks" class="flex-viewport">
             <div class="container paddingGrande">
                 <h1>Stack</h1>
                 <!-- <div class="flex columna">
@@ -154,9 +153,9 @@
             </div>
 
         </section>
-        <section id="trabajos">
+        <section id="projects">
             <div class="container paddingGrande">
-                <h1>Trabajos</h1>
+                <h1>Proyectos</h1>
                 <div class="flex contenedorTarjetas">
                     <div>
                         <h2>Online CV</h2>
@@ -216,44 +215,14 @@
                 </div>
             </div>
         </section>
-        <section id="contacto">
-            <div class="container paddingGrande">
-                <h1>Contacto</h1>
-                <div>
-                    <form class="flex" action="" name="formulario">
-
-                        <fieldset class="flex">
-                            <div>
-                                <i class="fa-solid fa-user"></i> <label for="nombre">Ingrese su nombre</label>
-                            </div>
-                            <input type="text" id="nombre" name="nombre" placeholder="Lautaro">
-                            <div>
-                                <i class="fa-solid fa-phone"></i> <label for="telefono">Ingrese su teléfono</label>
-                            </div>
-                            <input type="tel" id="telefono" name="telefono" placeholder="+5411223344">
-                            <div>
-                                <i class="fa-solid fa-envelope"></i> <label for="email">Ingrese su email</label>
-                            </div>
-                            <input type="email" id="email" name="email" placeholder="email@email.com">
-                            <div>
-                                <i class="fa-solid fa-comment"></i> <label for="mensaje">Ingrese su mensaje</label>
-                            </div>
-                            <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje..."></textarea>
-                            <button>Enviar</button>
-                        </fieldset>
-                    </form>
-                </div>
-
-            </div>
-        </section>
 
     </main>
     <div class="flotante flex centrar sombra">
         <a href="https://www.linkedin.com/in/lautadev/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://www.instagram.com/lautadev25/" target="_blank">
-            <i class="fa-brands fa-square-instagram"></i>
+        <a href="mailto:fernandez.lautaro@hotmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
         </a>
         <a href="https://github.com/Lautarof25" target="_blank">
             <i class="fa-brands fa-square-github"></i>
@@ -272,6 +241,15 @@
     
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyB_z0WZ9eDNmw3-tuD5paMAaIHRZqA88Mk",
+          authDomain: "portfoliolautarofernandez.firebaseapp.com",
+          projectId: "portfoliolautarofernandez",
+          storageBucket: "portfoliolautarofernandez.appspot.com",
+          messagingSenderId: "355969800782",
+          appId: "1:355969800782:web:9f5cd8ad25c8e07d13011f",
+          measurementId: "G-5RV3TJ0KC2"
+        };
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);

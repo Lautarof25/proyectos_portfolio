@@ -76,19 +76,19 @@ img {
 
 /* Cajas diagonales */
 
-#quien {
+#aboutme {
     transform: skewY(-5deg);
 }
 
-#quien>* {
+#aboutme>* {
     transform: skewY(5deg);
 }
 
-#trabajos {
+#projects {
     transform: skewY(5deg);
 }
 
-#trabajos>* {
+#projects>* {
     transform: skewY(-5deg);
 }
 
@@ -135,8 +135,8 @@ nav .fa-bars {
     display: none;
 }
 
-/* Sección quien */
-#quien {
+/* Sección aboutme */
+#aboutme {
     background-color: var(--second-color);
 }
 
@@ -144,7 +144,7 @@ nav .fa-bars {
     padding: 5%;
 }
 
-.quien__texto {
+.about_text {
     color: white;
     font-size: 2em;
     text-shadow: 2px 2px black;
@@ -155,7 +155,7 @@ nav .fa-bars {
     margin: 0;
 }
 
-.quien__imagen {
+.about_img {
     border-radius: 50%;
     z-index: 5;
 }
@@ -259,12 +259,12 @@ nav .fa-bars {
     font-size: 1em;
 }
 
-/* Sección trabajos */
-#trabajos {
+/* Sección projects */
+#projects {
     background-color: var(--third-color);
 }
 
-#trabajos>* {
+#projects>* {
     padding-top: 0;
 }
 
@@ -354,6 +354,13 @@ fieldset>div {
     gap: 2%;
 }
 
+.flex-viewport {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .contenedorTarjetas {
     gap: 50px;
 }
@@ -405,15 +412,15 @@ button:hover {
     }
 }
 
-#quien .bigCircle {
+#aboutme .bigCircle {
     animation: circles 2s alternate infinite;
 }
 
-#quien .mediumCircle {
+#aboutme .mediumCircle {
     animation: circles 2s alternate-reverse infinite;
 }
 
-#quien .smallCircle {
+#aboutme .smallCircle {
     animation: circles 1s alternate infinite;
 }
 
@@ -436,7 +443,7 @@ button:hover {
         width: 100%;
     }
 
-    .quien__texto {
+    .about_text {
         font-size: 1.5rem;
     }
 
@@ -451,7 +458,7 @@ button:hover {
         padding: 0;
     }
 
-    #quien .container {
+    #aboutme .container {
         width: 100%;
     }
 }
