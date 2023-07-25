@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-    --first-color: #E80C7E;
-    --second-color: #9D01DB;
-    --third-color: #F00CF2;
-    --fourth-color: #E8930C;
+    --first-color: #15677E;
+    --third-color: #70B5CE;
+    --second-color: #F59432;
+    --fourth-color: #E6F4F1;
 
     --font: 'Lato', sans-serif;
 
@@ -211,9 +211,10 @@ nav .fa-bars {
     padding: 2em;
 }
 
-#stacks i {
+#stacks i{
     font-size: 4em;
 }
+
 /* stack containers */
 .stack {
     height: 100px;
@@ -262,6 +263,7 @@ nav .fa-bars {
 /* Sección projects */
 #projects {
     background-color: var(--third-color);
+    color: var(--fourth-color);
 }
 
 #projects>* {
@@ -299,6 +301,10 @@ nav .fa-bars {
 
 .thumbnail {
     height: 200px;
+}
+
+#projects .fa-brands{
+    color: var(--fourth-color)
 }
 
 /* Sección contacto */
